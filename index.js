@@ -8,3 +8,5 @@ var swiper = new Swiper(".swiper", {
     clickable: true,
   },
 });
+
+AOS.init();
