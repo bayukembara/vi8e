@@ -34,12 +34,18 @@
   </head>
   <body>
     <!-- Navbar -->
+    <div class="mobile-show">
+      <p class="title-promo text-center">FREE DELIVERY FOR ORDERS ABOVE $199</p>
+    </div>
     <section id="navbar">
       <nav class="navbar navbar-expand-lg bg-light">
         <div class="container">
           <a class="navbar-brand" href="#">LE DIAMONDS</a>
+          <div class="mobile-show-cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </div>
           <button
-            class="navbar-toggler"
+            class="navbar-toggler d-flex d-lg-none flex-column justify-content-around"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent"
@@ -47,7 +53,9 @@
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span class="toggler-icon top-bar"></span>
+            <span class="toggler-icon middle-bar"></span>
+            <span class="toggler-icon bottom-bar"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -59,26 +67,6 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Blogs</a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="navbar">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item-right">
-                <a class="nav-link promo" aria-current="page" href="#"
-                  >FREE DELIVERY FOR ORDERS ABOVE $199</a
-                >
-              </li>
-              <li class="nav-item-right">
-                <a class="nav-link" href="#"
-                  ><i class="fa-solid fa-cart-shopping"></i
-                ></a>
-              </li>
-              <li class="nav-item-right">
-                <a class="nav-link" href="#"
-                  ><i class="fa-solid fa-user"></i
-                ></a>
               </li>
             </ul>
           </div>
@@ -165,7 +153,7 @@
 
     <!-- Products -->
     <section id="products">
-      <div class="container">
+      <div class="container web-design">
         <div class="row justify-content-md-center">
           <div class="col-md-auto highlight-product">
             <div class="row">
@@ -252,12 +240,75 @@
           </div>
         </div>
       </div>
+
+      <div class="container mobile-design">
+        <div class="row product-thumb">
+          <div class="col-5">
+            <img
+              src="./assets/img/products/all_products-removebg.png"
+              class="img-product-mobile"
+            />
+          </div>
+          <div class="col-7">
+            <p class="mb-0 title-product-mobile">NEW JEWELLRY DESIGN</p>
+            <a href="" class="link-product-mobile">SHOP NOW</a>
+          </div>
+        </div>
+        <div class="row product-second mt-1">
+          <div class="col-6 product-second">
+            <img
+              src="./assets/img/products/bracelets-removebg-preview.png"
+              class="img-product-mobile-second"
+            />
+            <p class="mb-0 title-product-mobile-second">EARRINGS COLLECTIONS</p>
+            <a href="" class="link-product-mobile-second">SHOP NOW</a>
+          </div>
+          <div class="col-6 product-third">
+            <img
+              src="./assets/img/products/bracelets-removebg-preview.png"
+              class="img-product-mobile-second"
+            />
+            <p class="mb-0 title-product-mobile-second">BRACELETS COLLECTION</p>
+            <a href="" class="link-product-mobile-second">SHOP NOW</a>
+          </div>
+        </div>
+        <div class="row product-thumb-second mt-1">
+          <div class="col-5">
+            <img
+              src="./assets/img/products/rings-removebg-preview.png"
+              class="img-product-mobile"
+            />
+          </div>
+          <div class="col-7">
+            <p class="mb-0 title-product-mobile">RINGS COLLECTION</p>
+            <a href="" class="link-product-mobile">SHOP NOW</a>
+          </div>
+        </div>
+        <div class="row product-third mt-1">
+          <div class="col-6 product-third">
+            <img
+              src="./assets/img/products/necklaces-removebg-preview.png"
+              class="img-product-mobile-third"
+            />
+            <p class="mb-0 title-product-mobile-third">NECKLACES COLLECTIONS</p>
+            <a href="" class="link-product-mobile-third">SHOP NOW</a>
+          </div>
+          <div class="col-6 product-fourth">
+            <img
+              src="./assets/img/products/earrings-removebg-preview.png"
+              class="img-product-mobile-third"
+            />
+            <p class="mb-0 title-product-mobile-third">PENDANTS COLLECTION</p>
+            <a href="" class="link-product-mobile-third">SHOP NOW</a>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- End Products -->
 
     <!-- Highlight Product -->
     <section id="highlight">
-      <div class="container">
+      <div class="container web-design">
         <div class="highlight my-5">
           <div class="row">
             <div class="col-6 description-high-all" data-aos="flip-up">
@@ -292,12 +343,36 @@
           </div>
         </div>
       </div>
+
+      <div class="container mobile-design">
+        <h1 class="title-mobile">Luxury Defined By Style, Not Price.</h1>
+        <img
+          src="./assets/img/products/thumbnail.png"
+          class="mobile-image-thumb"
+        />
+        <p class="description-highlight-mobile">
+          Moissanites are lab-grown gemstones, crafted by the most skilled hands
+          to create a sparkle that is a class of its own.
+        </p>
+        <p class="description-highlight-mobile">
+          Every piece of moissanite comes with a certification as a testament to
+          its quality. This gemstone is also durable, second only to diamonds in
+          terms of hardness. Hence, your fine jewellery pieces from Le Diamonds
+          cannot be easily scratched and keep their fire well. Due to its
+          hardness, we are also able to create dazzling cuts that will shine
+          brightly on you.
+        </p>
+        <p class="description-highlight-mobile">
+          Our attention to quality and detail ensures that all our moissanite
+          jewellery is a work of art that you can be proud to wear.
+        </p>
+      </div>
     </section>
     <!-- End Highlight Product -->
 
     <!--  Best Product-->
     <section id="best-product">
-      <div class="container">
+      <div class="container web-design">
         <div class="best-main my-5">
           <div class="row">
             <div class="col-4">
@@ -514,6 +589,25 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
+
+      <div class="container mobile-design">
+        <div class="row best-product-mobile">
+          <h1
+            class="best-title-mobile"
+            data-aos="fade-right"
+            data-aos-duration="1500"
+          >
+            Our Best Selling Products
+          </h1>
+          <button class="btn btn-primary-bestproduct" type="button">
+            SHOP COLLECTIONS
+          </button>
+        </div>
+        <div class="row">
+          <div class="col-6"></div>
+          <div class="col-6"></div>
         </div>
       </div>
     </section>

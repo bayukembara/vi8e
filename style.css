@@ -3,6 +3,10 @@ body {
   color: black;
 }
 
+.title-promo {
+  display: none !important;
+}
+
 .navbar.navbar-expand-lg.bg-light {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
   z-index: 1;
@@ -12,8 +16,8 @@ body {
   font-family: "Bodoni Moda", serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 28px;
-  line-height: 34px;
+  font-size: 25px;
+  line-height: 20px;
 
   /* identical to box height */
   letter-spacing: 0.05em;
@@ -25,6 +29,10 @@ body {
 
 .nav-item {
   margin-left: 55px;
+}
+
+.mobile-show-cart {
+  display: none !important;
 }
 
 .fa-solid.fa-cart-shopping {
@@ -394,13 +402,132 @@ body {
   font-family: "Bodoni Moda", serif;
 }
 
+#highlight .container.mobile-design {
+  display: none !important;
+}
+
 @media (max-width: 767.98px) {
+  #navbar {
+    margin-top: -20px;
+  }
+
+  .navbar-toggler {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transition: 0.5s ease-in-out;
+  }
+
+  .navbar-toggler,
+  .navbar-toggler:focus,
+  .navbar-toggler:active,
+  .navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+    border: 0;
+    position: relative;
+  }
+
+  .navbar-toggler span {
+    margin: 0;
+    padding: 0;
+  }
+
+  .toggler-icon {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: #9b622f;
+    border-radius: 1px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: 0.25s ease-in-out;
+  }
+
+  .middle-bar {
+    margin-top: 0px;
+  }
+
+  /* State when the navbar is collapsed */
+
+  .navbar-toggler.collapsed .top-bar {
+    position: absolute;
+    top: 0px;
+    transform: rotate(0deg);
+  }
+
+  .navbar-toggler.collapsed .middle-bar {
+    opacity: 1;
+    position: absolute;
+    top: 7px;
+    filter: alpha(opacity=100);
+  }
+
+  .navbar-toggler.collapsed .bottom-bar {
+    position: absolute;
+    top: 15px;
+    transform: rotate(0deg);
+  }
+
+  /* when navigation is clicked */
+
+  .navbar-toggler .top-bar {
+    top: inherit;
+    transform: rotate(135deg);
+  }
+
+  .navbar-toggler .middle-bar {
+    opacity: 0;
+    top: inherit;
+    filter: alpha(opacity=0);
+  }
+
+  .navbar-toggler .bottom-bar {
+    top: inherit;
+    transform: rotate(-135deg);
+  }
+
+  .title-promo {
+    background-color: #9b622f;
+    color: #ffffff;
+    margin-bottom: 0;
+    display: block !important;
+  }
+
+  .mobile-show-cart {
+    display: block !important;
+    margin-left: 35px;
+  }
+
   .p-5.mb-4.bg-light.rounded-3 {
     background: url("assets/img/Banner1.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     height: 234.47px;
     width: fit-content;
+  }
+
+  .nav-link.promo {
+    top: -91px;
+    background: #9b622f;
+    position: relative;
+    width: 45vh;
+    margin-left: 0px;
+    text-align: center;
+    color: white;
+  }
+
+  .navbar.navbar-expand-lg.bg-light {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    position: relative;
+    top: 20px;
+  }
+
+  .nav-item {
+    margin-left: 0px;
   }
 
   .first {
@@ -459,9 +586,14 @@ body {
     text-align: left;
   }
 
+  .ico-services {
+    margin-left: -5px;
+  }
+
   .sub-title {
     font-weight: 700;
     font-size: 12px;
+    margin-bottom: 0px;
   }
 
   .sub-titles {
@@ -472,5 +604,148 @@ body {
   .ico-services {
     color: #9b622f;
     font-size: 1.5rem;
+  }
+
+  #products .container.web-design {
+    display: none !important;
+    font-size: 12px;
+  }
+
+  #products .container.mobile-design {
+    font-size: 12px;
+  }
+
+  .product-thumb {
+    background: url("/assets/img/bgproducts/1.png");
+    background-size: 100% 100%;
+  }
+
+  .product-thumb-second {
+    background: url("/assets/img/bgproducts/4.png");
+    background-size: 100% 100%;
+  }
+
+  .product-second {
+    background: url("/assets/img/bgproducts/3.png");
+    background-size: 100% 100%;
+  }
+  .product-third {
+    background: url("/assets/img/bgproducts/2.png");
+    background-size: 100% 100%;
+  }
+  .product-fourth {
+    background: url("/assets/img/bgproducts/5.png");
+    background-size: 100% 100%;
+  }
+
+  .img-product-mobile {
+    width: 200px;
+    height: 200px;
+    margin-left: -30px;
+  }
+
+  .mb-0.title-product-mobile {
+    margin-top: 60px;
+    margin-left: 20px;
+  }
+
+  .link-product-mobile {
+    margin-left: 20px;
+    color: black;
+  }
+
+  .img-product-mobile-second {
+    width: 200px;
+    height: 200px;
+    margin-left: -30px;
+    margin-bottom: -50px;
+  }
+
+  .mb-0.title-product-mobile-second {
+    margin-top: 60px;
+  }
+
+  .link-product-mobile-second {
+    color: black;
+    display: flex;
+    padding-bottom: 10px;
+  }
+
+  .img-product-mobile-third {
+    width: 200px;
+    height: 200px;
+    margin-left: -30px;
+    margin-bottom: -50px;
+  }
+
+  .mb-0.title-product-mobile-third {
+    margin-top: 60px;
+  }
+
+  .link-product-mobile-third {
+    color: black;
+    display: flex;
+    padding-bottom: 10px;
+  }
+
+  #highlight .container.web-design {
+    display: none !important;
+    font-size: 12px;
+  }
+
+  #highlight .container.mobile-design {
+    margin: 50px 0px;
+  }
+
+  .title-mobile {
+    font-family: "Playfair Display", serif;
+  }
+
+  .mobile-image-thumb {
+    width: 100%;
+    margin: 20px 0px;
+  }
+
+  #best-product .container.web-design {
+    display: none !important;
+  }
+
+  .best-title-mobile {
+    display: block;
+    margin-top: 150px;
+    font-family: "Playfair Display", serif;
+    width: 250px;
+    margin-left: 20px;
+  }
+  .best-product-mobile {
+    background: url("/assets/img/bgproducts/best.png");
+    background-size: 100% 100%;
+    width: 412px;
+    height: 518px;
+  }
+
+  .btn.btn-primary-bestproduct {
+    background-color: #9b622f !important;
+    border-radius: 0px;
+    font-size: 14px;
+    color: white;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    width: 200px;
+    height: 70px;
+    margin-left: 30px;
+    margin-top: -120px;
+  }
+}
+
+@media (min-width: 1399.98px) {
+  #products .container.mobile-design {
+    display: none !important;
+  }
+}
+
+@media (min-width: 1199.98px) {
+  #products .container.mobile-design {
+    display: none !important;
   }
 }
