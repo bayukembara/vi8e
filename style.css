@@ -199,7 +199,7 @@ body {
 }
 
 #highlight {
-  margin-bottom: 220px;
+  margin-bottom: 10px;
 }
 
 .best-thumb {
@@ -402,11 +402,11 @@ body {
   font-family: "Bodoni Moda", serif;
 }
 
-#highlight .container.mobile-design {
-  display: none !important;
-}
-
 @media (max-width: 767.98px) {
+  body {
+    overflow-x: hidden;
+  }
+
   #navbar {
     margin-top: -20px;
   }
@@ -545,7 +545,7 @@ body {
   .btn.btn-primary-banner.btn-lg {
     background-color: #9b622f;
     border-radius: 0px;
-    font-size: 9px;
+    font-size: 12px;
     padding: 10px 10px;
     color: white;
     align-items: center;
@@ -557,12 +557,12 @@ body {
     background-color: rgba(0, 0, 0, 0.8);
     width: 25px;
     height: 1px;
-    margin-top: -70px;
+    margin-top: -55px;
     margin-right: 5px;
   }
   .after-line {
     font-size: 9px;
-    margin-top: -75px;
+    margin-top: -61px;
   }
   .end-line {
     color: #868686;
@@ -613,6 +613,26 @@ body {
 
   #products .container.mobile-design {
     font-size: 12px;
+  }
+
+  #blogs .container.web-design {
+    display: none !important;
+  }
+
+  #blogs .container.mobile-design {
+    margin-bottom: 100px;
+  }
+
+  #carouselExampleInterval {
+    padding-bottom: 25px;
+  }
+
+  #footer .container.web-design {
+    display: none !important;
+  }
+
+  #trademark-webdesign {
+    display: none !important;
   }
 
   .product-thumb {
@@ -736,16 +756,170 @@ body {
     margin-left: 30px;
     margin-top: -120px;
   }
+
+  .product-image {
+    background-color: #f2f2f2;
+    margin: 5px 0px;
+  }
+
+  .product-img {
+    margin-left: -15px;
+    display: block;
+  }
+
+  .blogs-img-mobile {
+    width: 366px;
+    margin-left: -18px;
+    margin-top: -16px;
+    border-top: 5px;
+  }
+
+  .mobile-tag {
+    background-color: #242424;
+    color: white;
+    padding: 1% 1%;
+    position: fixed;
+    margin-top: -20px;
+    margin-left: 238px;
+    width: 28%;
+    text-align: center;
+  }
+
+  .title-mobile-blogs {
+    margin-top: 20px;
+    margin-bottom: 0px;
+    font-size: 18px;
+    letter-spacing: 1px;
+  }
+
+  .description-mobile-blogs {
+    font-size: 12px;
+    line-height: 1rem;
+    color: #9a9a9a;
+  }
+
+  .blogs-timeline {
+    font-size: 12px;
+    color: #9a9a9a;
+  }
+
+  .container .mobile-design {
+    display: block !important;
+    margin-bottom: 100px;
+  }
+
+  #promo-footer .container.web-design {
+    display: none !important;
+  }
+
+  .text-promo-footer {
+    color: #ffffff;
+  }
+
+  .highlight-promo-footer {
+    font-size: 20px;
+    margin-top: 5px;
+  }
+
+  .btn-promo-footer {
+    position: relative !important;
+    background-color: #fff;
+    color: #9b622f;
+    border-radius: 0px;
+    padding: 2% 2%;
+    margin-bottom: 20px;
+    justify-content: center;
+    margin-left: 105px;
+  }
+
+  .img-payment-mobile {
+    width: 50%;
+    height: 50%;
+  }
+
+  .mobile-info {
+    height: auto;
+  }
+  .title-trademark {
+    font-family: "Playfair Display", serif;
+    font-size: 28px;
+    padding: 15px 0px;
+  }
+
+  #footer {
+    background-color: #252525;
+    color: #ffffff;
+    height: auto;
+  }
+
+  .title-collection-info {
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+
+  .title-information-info {
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+
+  .title-contact {
+    padding-top: 20px;
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+
+  .detail-collection-info {
+    margin-top: 20px;
+  }
+
+  .detail-information-info {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  .detail-contact-info {
+    margin-bottom: 20px;
+  }
 }
 
 @media (min-width: 1399.98px) {
   #products .container.mobile-design {
     display: none !important;
   }
+  #highlight .container.mobile-design {
+    display: none !important;
+  }
+  #best-product .container.mobile-design {
+    display: none !important;
+  }
+  #blogs .container.mobile-design {
+    display: none !important;
+  }
+  #promo-footer .container.mobile-design {
+    display: none !important;
+  }
+  #best-product .container.web-design {
+    margin-top: 200px;
+  }
 }
 
 @media (min-width: 1199.98px) {
   #products .container.mobile-design {
+    display: none !important;
+  }
+  #highlight .container.mobile-design {
+    display: none !important;
+  }
+  #best-product .container.mobile-design {
+    display: none !important;
+  }
+  #blogs .container.mobile-design {
+    display: none !important;
+  }
+  #best-product .container.web-design {
+    margin-top: 200px;
+  }
+  #promo-footer .container.mobile-design {
     display: none !important;
   }
 }
