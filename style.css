@@ -901,6 +901,9 @@ body {
   #best-product .container.web-design {
     margin-top: 200px;
   }
+  #footer .container.mobile-design {
+    display: none !important;
+  }
 }
 
 @media (min-width: 1199.98px) {
@@ -920,6 +923,9 @@ body {
     margin-top: 200px;
   }
   #promo-footer .container.mobile-design {
+    display: none !important;
+  }
+  #footer .container.mobile-design {
     display: none !important;
   }
 }
